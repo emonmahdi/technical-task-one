@@ -13,14 +13,22 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-100 text-gray-800 py-12">
+    <footer className="text-gray-800 py-12">
       <div className="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-12 gap-8">
         {/* Column 1: Logo + Socials */}
         <div className="md:col-span-3">
-          <h2 className="text-xl font-bold mb-4">Business Logo</h2>
-          <p className="mb-4 text-gray-600">
-            Leading plumbing solutions for your home and business.
-          </p>
+          <h2
+            className="
+    font-inter                 
+    font-bold                    
+    text-[32px]                 
+    leading-[100%]               
+    tracking-[-0.03em]           
+    mb-[28px]
+  "
+          >
+            Business Logo
+          </h2>
           <div className="flex space-x-4 text-xl">
             <a href="#" aria-label="Facebook" className="hover:text-blue-600">
               <FaFacebookF />
@@ -39,25 +47,89 @@ const Footer = () => {
 
         {/* Column 2: Our Services */}
         <div className="md:col-span-2">
-          <h3 className="font-semibold text-lg mb-4">Our Services</h3>
+          <h3
+            className="
+    font-inter
+    font-semibold
+    text-[14px]
+    leading-[24px]
+    tracking-[0em]
+    mb-[24px]
+  "
+          >
+            Our Services
+          </h3>
+
           <ul className="space-y-2">
             <li>
-              <a href="#" className="hover:text-blue-600 transition-colors">
+              <a
+                href="#"
+                className="
+    font-inter
+    font-normal
+    text-[14px]
+    leading-[20px]
+    tracking-[0em]
+    hover:text-blue-600
+    transition-colors
+    mb-[16px]
+    text-[#2A2F32]
+  "
+              >
                 Plumbing
               </a>
             </li>
             <li>
-              <a href="#" className="hover:text-blue-600 transition-colors">
+              <a
+                href="#"
+                className="
+      font-inter
+      font-normal
+      text-[14px]
+      leading-[20px]
+      tracking-[0em]
+      hover:text-blue-600
+      transition-colors
+      mb-[16px]
+    text-[#2A2F32]
+    "
+              >
                 Drainage
               </a>
             </li>
             <li>
-              <a href="#" className="hover:text-blue-600 transition-colors">
+              <a
+                href="#"
+                className="
+      font-inter
+      font-normal
+      text-[14px]
+      leading-[20px]
+      tracking-[0em]
+      hover:text-blue-600
+      transition-colors
+      mb-[16px]
+    text-[#2A2F32]
+    "
+              >
                 Bathrooms
               </a>
             </li>
             <li>
-              <a href="#" className="hover:text-blue-600 transition-colors">
+              <a
+                href="#"
+                className="
+      font-inter
+      font-normal
+      text-[14px]
+      leading-[20px]
+      tracking-[0em]
+      hover:text-blue-600
+      transition-colors
+      mb-[16px]
+    text-[#2A2F32]
+    "
+              >
                 Commercial
               </a>
             </li>
@@ -66,48 +138,157 @@ const Footer = () => {
 
         {/* Column 3: Useful Links */}
         <div className="md:col-span-4">
-          <h3 className="font-semibold text-lg mb-4">Useful Links</h3>
+          <h3
+            className="
+    font-inter
+    font-semibold
+    text-[14px]
+    leading-[24px]
+    tracking-[0em]
+    mb-[24px]
+  "
+          >
+            Useful Links
+          </h3>
+
           <div className="grid grid-cols-2 gap-x-8">
             <ul className="space-y-2">
               <li>
-                <a href="#" className="hover:text-blue-600 transition-colors">
+                <a
+                  href="#"
+                  className="
+      font-inter
+      font-normal
+      text-[14px]
+      leading-[20px]
+      tracking-[0em]
+      hover:text-blue-600
+      transition-colors
+      mb-[16px]
+    text-[#2A2F32]"
+                >
                   Contact Us
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-blue-600 transition-colors">
+                <a
+                  href="#"
+                  className="
+      font-inter
+      font-normal
+      text-[14px]
+      leading-[20px]
+      tracking-[0em]
+      hover:text-blue-600
+      transition-colors
+      mb-[16px]
+    text-[#2A2F32]"
+                >
                   Updates
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-blue-600 transition-colors">
+                <a
+                  href="#"
+                  className="
+      font-inter
+      font-normal
+      text-[14px]
+      leading-[20px]
+      tracking-[0em]
+      hover:text-blue-600
+      transition-colors
+      mb-[16px]
+    text-[#2A2F32]"
+                >
                   About Us
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-blue-600 transition-colors">
+                <a
+                  href="#"
+                  className="
+      font-inter
+      font-normal
+      text-[14px]
+      leading-[20px]
+      tracking-[0em]
+      hover:text-blue-600
+      transition-colors
+      mb-[16px]
+    text-[#2A2F32]"
+                >
                   Rates
                 </a>
               </li>
             </ul>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="hover:text-blue-600 transition-colors">
+                <a
+                  href="#"
+                  c
+                  className="
+      font-inter
+      font-normal
+      text-[14px]
+      leading-[20px]
+      tracking-[0em]
+      hover:text-blue-600
+      transition-colors
+      mb-[16px]
+    text-[#2A2F32]"
+                >
                   Customer Services
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-blue-600 transition-colors">
+                <a
+                  href="#"
+                  className="
+      font-inter
+      font-normal
+      text-[14px]
+      leading-[20px]
+      tracking-[0em]
+      hover:text-blue-600
+      transition-colors
+      mb-[16px]
+    text-[#2A2F32]"
+                >
                   Updates
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-blue-600 transition-colors">
+                <a
+                  href="#"
+                  className="
+      font-inter
+      font-normal
+      text-[14px]
+      leading-[20px]
+      tracking-[0em]
+      hover:text-blue-600
+      transition-colors
+      mb-[16px]
+    text-[#2A2F32]"
+                >
                   Locations
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-blue-600 transition-colors">
+                <a
+                  href="#"
+                  className="
+      font-inter
+      font-normal
+      text-[14px]
+      leading-[20px]
+      tracking-[0em]
+      hover:text-blue-600
+      transition-colors
+      mb-[16px]
+    text-[#2A2F32]"
+                >
                   Sitemap
                 </a>
               </li>
@@ -117,17 +298,44 @@ const Footer = () => {
 
         {/* Column 4: Contact Info */}
         <div className="md:col-span-3">
-          <h3 className="font-semibold text-lg mb-4">Contact Info</h3>
+          <h3
+            className="
+    font-inter
+    font-semibold
+    text-[14px]
+    leading-[24px]
+    tracking-[0em]
+    mb-[24px]
+  "
+          >
+            Contact Info
+          </h3>
           <ul className="space-y-4">
             <li className="flex items-start space-x-3">
               <HiOutlineLocationMarker className="text-xl flex-shrink-0 mt-1" />
-              <span>1 Sail Street, London, SE11 6NQ</span>
+              <span
+                className="
+    font-inter
+    font-semibold
+    text-[14px]
+    leading-[24px]
+    tracking-[0em]
+  "
+              >
+                1 Sail Street, London, SE11 6NQ
+              </span>
             </li>
             <li className="flex items-start space-x-3">
               <HiOutlineMail className="text-xl flex-shrink-0 mt-1" />
               <a
                 href="mailto:enquiries@PlumbingPros.com"
-                className="hover:text-blue-600 transition-colors"
+                className="
+    font-inter
+    font-semibold
+    text-[14px]
+    leading-[24px]
+    tracking-[0em]
+  "
               >
                 enquiries@PlumbingPros.com
               </a>
@@ -136,7 +344,13 @@ const Footer = () => {
               <HiOutlinePhone className="text-xl flex-shrink-0 mt-1" />
               <a
                 href="tel:+442045276474"
-                className="hover:text-blue-600 transition-colors"
+                className="
+    font-inter
+    font-semibold
+    text-[14px]
+    leading-[24px]
+    tracking-[0em]
+  "
               >
                 020 4527 6474
               </a>
@@ -146,11 +360,11 @@ const Footer = () => {
       </div>
 
       {/* Bottom Bar */}
-      <div className="border-t border-gray-200 mt-6 py-4 px-20 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500">
+      <div className="border-t border-gray-200 mt-6 py-4 px-4 sm:px-8 md:px-20 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs sm:text-sm text-gray-500 text-center sm:text-left">
         <p>© Plumbing Pros. All Rights Reserved</p>
         <p>
           Website by{" "}
-          <a href="#" className="hover:text-blue-600">
+          <a href="#" className="hover:text-blue-600 transition-colors">
             JH Adventure And Creative
           </a>
         </p>
