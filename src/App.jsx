@@ -1,5 +1,6 @@
 import './App.css'
 import FaqSection from "./components/FaqSection";
+import Footer from "./components/Footer";
 import GetInTouch from "./components/GetInTouch";
 
 const fontFamilyInter = {
@@ -15,6 +16,7 @@ function App() {
         </h2>
         <FaqSection />
         <GetInTouch />
+        <Footer />
       </div>
     </>
   );
