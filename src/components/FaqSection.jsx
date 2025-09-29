@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { FiChevronDown, FiChevronUp } from "react-icons/fi";
+ 
 
 const faqs = [
   {
@@ -37,9 +38,9 @@ const FaqSection = () => {
       <h2
         className="
     font-inter font-bold tracking-[-0.03em] text-center text-[#1B1743]
-    text-[24px] leading-[32px]            /* Mobile default */
-    sm:text-[32px] sm:leading-[40px]      /* Tablet styles */
-    lg:text-[48px] lg:leading-[48px]      /* Desktop styles */
+    text-[24px] leading-[32px]             
+    sm:text-[32px] sm:leading-[40px]       
+    lg:text-[48px] lg:leading-[48px]       
     max-w-[1360px] w-full mx-auto mb-[40px]
   "
       >
