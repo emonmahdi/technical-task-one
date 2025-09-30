@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { FiChevronDown, FiChevronUp } from "react-icons/fi";
- 
 
 const faqs = [
   {
@@ -36,56 +35,51 @@ const FaqSection = () => {
     <section className="w-full bg-white py-12 px-4 sm:px-6 lg:px-20">
       {/* Heading */}
       <h2
-        className="
-    font-inter font-bold tracking-[-0.03em] text-center text-[#1B1743]
-    text-[24px] leading-[32px]             
-    sm:text-[32px] sm:leading-[40px]       
-    lg:text-[48px] lg:leading-[48px]       
-    max-w-[1360px] w-full mx-auto mb-[40px]
-  "
+        className="font-inter font-bold tracking-[-0.03em] text-center text-[#1B1743] 
+                     text-[24px] leading-[32px] sm:text-[32px] sm:leading-[40px] 
+                     lg:text-[48px] lg:leading-[48px] max-w-[1360px] w-full mx-auto mb-[40px]"
       >
         Frequently asked questions
       </h2>
 
       {/* FAQ List */}
       <div className="max-w-3xl mx-auto divide-y divide-gray-200 border-t border-b border-gray-200">
-        {faqs.map((faq, index) => (
-          <div key={index} className="py-5">
-            {/* Question */}
-            <button
-              onClick={() => toggleFAQ(index)}
-              className="w-full flex justify-between items-center text-left focus:outline-none"
-            >
-              <span
-                className="
-    font-inter font-semibold tracking-[-0.03em] text-[#1B1743]
-    text-[16px] leading-[24px]           /* Mobile default */
-    sm:text-[20px] sm:leading-[28px]     /* Tablet */
-    lg:text-[28px] lg:leading-[40px]     /* Desktop */
-  "
-              >
-                {faq.question}
-              </span>
-              <span className="ml-4 text-xl text-gray-600">
-                {openIndex === index ? <FiChevronUp /> : <FiChevronDown />}
-              </span>
-            </button>
+        {faqs.map((faq, index) => {
+          const isOpen = openIndex === index;
 
-            {/* Answer */}
-            {openIndex === index && (
-              <p
-                className="
-                mt-3 font-inter font-normal tracking-[0em] text-[#2A2F32]
-                text-[14px] leading-[20px]          /* Mobile default */
-                sm:text-[14px] sm:leading-[20px]    /* Tablet */
-                lg:text-[18px] lg:leading-[30px]    /* Desktop */
-              "
+          return (
+            <div key={index} className="py-5">
+              {/* Question */}
+              <button
+                onClick={() => toggleFAQ(index)}
+                className="w-full flex justify-between items-center text-left focus:outline-none"
               >
-                {faq.answer}
-              </p>
-            )}
-          </div>
-        ))}
+                <span
+                  className="font-inter font-semibold tracking-[-0.03em] text-[#1B1743] cursor-pointer
+                                 text-[16px] leading-[24px] sm:text-[20px] sm:leading-[28px] 
+                                 lg:text-[28px] lg:leading-[40px]"
+                >
+                  {faq.question}
+                </span>
+
+                <span className="ml-4 text-xl text-gray-600">
+                  {isOpen ? <FiChevronUp /> : <FiChevronDown />}
+                </span>
+              </button>
+
+              {/* Answer */}
+              {isOpen && (
+                <p
+                  className="mt-3 font-inter font-normal tracking-[0em] text-[#2A2F32]
+                              text-[14px] leading-[20px] sm:text-[14px] sm:leading-[20px] 
+                              lg:text-[18px] lg:leading-[30px]"
+                >
+                  {faq.answer}
+                </p>
+              )}
+            </div>
+          );
+        })}
       </div>
     </section>
   );
